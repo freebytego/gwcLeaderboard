@@ -1,0 +1,11 @@
+
+# HTID:16361465: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:16361465:
+
+Options -Indexes
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://gwcleaderboard.000webhostapp.com/$1 [R,L]
+php_flag log_errors on
+php_value error_log /storage/ssd5/729/15804729/public_html/domain/PHP_errors.log
